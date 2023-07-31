@@ -13,7 +13,6 @@ body {
 #container {
     width: 900px;
     margin: 40px auto;
-    /* position: relative; */
 }
 
 .article {
@@ -26,21 +25,6 @@ body {
     font-size: 22px;
     text-transform: uppercase;
     background-color: #f7f7f7;
-}
-
-.image {
-    margin-right: 40px;
-    float: left;
-}
-
-.description {
-    float: left;
-}
-
-.product-det {
-    float: right;
-    margin-left: 40px;
-    width: 280px;
 }
 
 .sale {
@@ -64,82 +48,50 @@ body {
 
 .price {
     font-size: 24px;
-    float: left;
     margin-top: 10px;
-    /* margin-right: 65px; */
 }
 
 .promo {
     text-transform: uppercase;
     font-weight: bold;
+    font-size: 15px;
     color:#727272;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    float: right;
 }
 
 .info-text {
-    margin-bottom: 20px;
-    width: 280px;
-    clear: both;
-}
-
-.color-picker {
-    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .blck {
     background-color: #000;
-    display: inline-block;
-    width: 30px;
     height: 30px;
-    margin-right: 10px;
 }
 
 .blu {
     background-color: #2d5bbe;
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
 }
 
 .rd {
     background-color: #f01818;
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
 }
 
 .yello {
     background-color: #dacf42;
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
 }
 
 .gren {
     background-color: #62af23;
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
 }
 
 .brawn {
     background-color: #8d4b14;
-    display: inline-block;
-    width: 30px;
-    height: 30px;
 }
 
 .product-details {
     text-transform: uppercase;
-    font-size: 16px;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
 }
 
 ul {
@@ -173,4 +125,40 @@ button:hover {
     background-color: white;
     color: black;
     cursor: pointer;
+}
+
+/* FLEXBOX */
+.row {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.description {
+    flex: 1;
+}
+
+.product-det {
+    flex: 1;
+}
+
+.price-promo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.price {
+    margin: 0;
+}
+
+.color-picker {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.color {
+    flex-basis: 30px;
 }
